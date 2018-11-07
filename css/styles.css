@@ -59,6 +59,17 @@ a {
 	border-radius: 5px;
 }
 
+#about-me, #projects, #skills, #contact-me {
+	height: 400px;
+}
+
+form {
+	input {
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+}
+
 @media (min-width: 769px) {
 	.header,
 	.main-nav {

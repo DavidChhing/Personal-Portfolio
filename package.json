@@ -25,5 +25,8 @@
     "stylefmt": "^6.0.3",
     "stylelint": "^9.7.1",
     "stylelint-config-recommended": "^2.1.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0"
   }
 }
