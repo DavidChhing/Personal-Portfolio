@@ -23,6 +23,7 @@
     "postcss-cli": "^6.0.1",
     "postcss-nested": "^4.1.0",
     "stylefmt": "^6.0.3",
-    "stylelint": "^9.7.1"
+    "stylelint": "^9.7.1",
+    "stylelint-config-recommended": "^2.1.0"
   }
 }
