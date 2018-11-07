@@ -1,0 +1,28 @@
+{
+  "name": "Personal-Portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Alchemy code lab 401",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss css/*.css -d build/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidChhing/Personal-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "davidhchhing@gmail.com (https://github.com/davidchhing)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidChhing/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/DavidChhing/Personal-Portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1",
+    "postcss-nested": "^4.1.0",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^9.7.1"
+  }
+}
