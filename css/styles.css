@@ -21,6 +21,22 @@ a {
     text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+details {
+  width: 100%;
+  img:hover {
+		cursor:pointer;
+	}
+	summary {
+	h3 {
+	text-align: center;
+	}
+}
+}
+
 .header-name {
     margin: 0;
     font-size: 3em;
@@ -60,7 +76,7 @@ a {
 }
 
 #about-me, #projects, #skills, #contact-me {
-	height: 400px;
+	height: 100%;
 
 }
 
@@ -91,6 +107,13 @@ form {
     .header {
 		flex-direction: row;
 		justify-content: space-between;
+		.hamburger, .cross {
+			display: none;
+		}
+		.main-nav {
+			display: flex !important;
+		}
+
 	}
 }
 
