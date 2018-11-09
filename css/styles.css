@@ -9,6 +9,7 @@ body {
     font-size: 1.33em;
     line-height: 1.6;
 	min-height: 100vh;
+	background-color: rgb(233, 232, 234);
 }
 
 ul {
@@ -24,6 +25,40 @@ a {
 img {
   width: 100%;
 }
+
+section {
+	p {
+		background-color: rgb(255, 255, 255);
+		font-family: 'Roboto Slab', serif;
+		color: rgb(169, 107, 90);
+	}
+}
+
+.image-container {
+	position: relative;
+	text-align: center;
+	.centered-name {
+		position: absolute;
+		top: 10%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+		color: white;
+		text-shadow:
+			-1px 0 black,
+			0 1px black,
+			1px 0 black,
+			0 -1px black;
+		font-family: 'Roboto Slab', serif;
+		width: 100%;
+	}
+	p {
+		font-size: 35px;
+	}
+	img {
+		opacity: .8;
+	}
+}
+
 
 details {
   width: 100%;
