@@ -37,25 +37,29 @@ details {
 }
 }
 
+#top-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+
 .header-name {
     margin: 0;
-    font-size: 3em;
-    /* check the code below again to see if margins are correct */
-    padding: 10px 15px;
-    text-align: center;
-    display: block;
+    font-size: 1.1em;
+}
+
+.icon-github, .icon-linkedin {
+	padding: 6px;
 }
 
 .main-nav {
     margin-top: 0.4em;
-
 	a {
 		padding: 10px 15px;
 		text-align: center;
 		display: block;
-		color: rgb(244, 244, 244);
 		font-size: 1em;
-
+		color: rgb(169, 107, 90);
 		&:hover {
 			color: #718daa;
 		}
@@ -66,17 +70,22 @@ details {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
-	background-color: rgb(192, 178, 131);
+	background-color: rgb(233, 232, 234);
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	color: rgb(169, 107, 90);
 }
 
 #about-me, #projects, #skills, #contact-me {
 	height: 100%;
+
+}
+#main-background {
+	/* background-color: RGBA(0,0,17,.5); */
 
 }
 
@@ -85,7 +94,18 @@ form {
 		border: 2px solid black;
 		border-radius: 5px;
 	}
+	textarea{
+		border: 2px solid black;
+		border-radius: 5px;
+	}
 }
+
+div {
+	label, input {
+		display: flex;
+	}
+}
+
 
 @media (min-width: 769px) {
 	.header,
