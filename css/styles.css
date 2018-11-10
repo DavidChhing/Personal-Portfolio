@@ -23,7 +23,8 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 70%;
+
 }
 
 section {
@@ -135,9 +136,14 @@ form {
 	}
 }
 
-div {
-	label, input {
-		display: flex;
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+fieldset {
+	input {
+    	margin: .4rem;
 	}
 }
 
@@ -162,13 +168,13 @@ div {
     .header {
 		flex-direction: row;
 		justify-content: space-between;
+		font-size: 39px;
 		.hamburger, .cross {
 			display: none;
 		}
 		.main-nav {
 			display: flex !important;
 		}
-
 	}
 }
 

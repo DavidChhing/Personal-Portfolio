@@ -36,10 +36,12 @@
                     </ul>
                 </nav>
         </header>
-        <div class="image-container">
-            <img src="/images/computer-background.jpg" alt="create">
 
-            <p class="centered-name">Meet David Chhing</p>
+        <div class="image-container">
+            <img src="/images/tree.jpg" alt="tree-background" class ="tree-background">
+
+            <p class="centered-name">David Chhing</p></br>
+            <p class="title-name">Full Stack Javascript Developer</p>
 
         </div>
 
@@ -47,6 +49,8 @@
         <h3>Placeholder for about me</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur id nisi iusto hic, et, atque ipsa a asperiores sint inventore magnam ut, autem aperiam iure reiciendis rerum magni incidunt eligendi.</p>
     </section>
+
+    <button class="open-button" id="openForm">Submit project</button>
 
     <section id="projects" class="animated jackInTheBox delay-1s">
         <details>
@@ -80,16 +84,57 @@
         </details>
     </section>
 
-    <section>
-        <form for="projects">
-            <label for="projectName" class="">Project Name</label>
+
+
+
+
+
+
+    <section class="form-popup" id="myForm">
+
+        <form action="" for="projects">
+            <label for="projectName" class="">Project Name:</label></br
             <input type="text" id="projectName" name="projectName">
 
-            <textarea name="short-description" id="projects" cols="30" rows="10" placeholder="short description"></textarea>
+                    <label for="short-description">Brief description:</label>
+                    <textarea name="longDescription" id="long-description" cols="50" rows="2"></textarea></br>
 
-            <textarea name="long-description" id="projects" cols="30" rows="10" placeholder="long description"></textarea>
+                    <label for="long-description">Full description:</label>
+                    <textarea name="longDescription" id="long-description" cols="50" rows="10"></textarea>
 
-            <input type="image" id="image" alt="image">
+            <fieldset>
+                <legend>Select Technologies Used</legend>
+                    <input type="checkbox" id="javascipt" name="technologiesUsed">
+                    <label for="javascipt">Javascript</label></br>
+
+                    <input type="checkbox" id="html" name="technologiesUsed">
+                    <label for="html">HTML</label></br>
+
+                    <input type="checkbox" id="css" name="technologiesUsed">
+                    <label for="css">CSS</label></br>
+
+                    <input type="checkbox" id="node-js" name="technologiesUsed">
+                    <label for="node-js">Node.JS</label></br>
+
+                    <input type="checkbox" id="vue-js" name="technologiesUsed">
+                    <label for="vue-js">Vue.JS</label></br>
+
+                    <input type="checkbox" id="express" name="technologiesUsed">
+                    <label for="express">Express</label></br>
+
+                    <input type="checkbox" id="mongoDB" name="technologiesUsed">
+                    <label for="mongoDB">mongoDB</label></br>
+            </fieldset>
+
+            <label for="insert-picture">Insert image</label>
+            <input type="file" id="insert-picture" accepted=".jpg, .png, .gif"></br>
+
+            <label for="project-type">What type of project was it?</label></br>
+            <input type="checkbox" id="team-project">
+            <label for="team-project">Team</label>
+            <input type="checkbox" id="individually">
+            <label for="individually">Individually</label>
+            <button type="submit" class="button">Submit</button>
         </form>
     </section>
 
@@ -118,5 +163,6 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/view.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
