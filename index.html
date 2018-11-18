@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="build/css/state.css" type="text/css">
     <link rel="stylesheet" href="build/css/icon.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>David Chhing's Personal Portfolio</title>
 </head>
@@ -26,13 +27,13 @@
 
             <button class="hamburger">&#9776;</button>
             <button class="cross">&#735;</button>
-                <nav>
+                <nav id="nav">
                     <ul class="main-nav">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#about-me">ABOUT ME</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#contact-me">CONTACT ME</a></li>
+                        <li><a href="#home" class="animate-nav">HOME</a></li>
+                        <li><a href="#projects" class="animate-nav">PROJECTS</a></li>
+                        <li><a href="#about-me" class="animate-nav">ABOUT ME</a></li>
+                        <li><a href="#skills" class="animate-skills">SKILLS</a></li>
+                        <li><a href="#contact-me" class="animate-nav">CONTACT ME</a></li>
                     </ul>
                 </nav>
         </header>
@@ -42,12 +43,13 @@
 
             <p class="centered-name">David Chhing</p></br>
             <p class="title-name">Full Stack Javascript Developer</p>
-
         </div>
 
     <section id="about-me" class="animated jackInTheBox delay-1s">
-        <h3>Placeholder for about me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur id nisi iusto hic, et, atque ipsa a asperiores sint inventore magnam ut, autem aperiam iure reiciendis rerum magni incidunt eligendi.</p>
+        <h3>About David!</h3>
+        <p>
+            FullStack JavaScript Developer who served in the US Army who enjoys taking raw code and transforming it into functional and meaningful solutions. Looking to secure a role that utilizes my communication and collaboration skills and can feed my passion for continuous learning and problem solving.
+        </p>
     </section>
 
     <button class="open-button" id="openForm">Submit project</button>
@@ -58,25 +60,21 @@
     <section id="projects" class="animated jackInTheBox delay-1s">
         <details>
             <summary>
+                    <h3>Placeholder for project #1</h3>
                 <img src="/images/samoyed1.jpeg" alt="Happy Samoyed">
-                <h3>Placeholder for project #1</h3>
             </summary>
-            <div id="project1Details">
+            <button class="projects-button">Details</button>
+            <div id="projectDetails">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta facilis nihil magni odio inventore? Perspiciatis officiis ipsam quisquam ut optio commodi, minima hic quia atque id nostrum deleniti obcaecati corrupti.</p>
             </div>
         </details>
-
-
-
-
-
 
         <details>
             <summary>
                 <img src="/images/samoyed2.jpeg" alt="Happy Samoyed">
                 <h3>Placeholder for project #2</h3>
             </summary>
-            <div>
+            <div id="projectDetails">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quasi consequuntur veniam, eaque numquam sint tenetur velit in, voluptas quisquam eos! Possimus adipisci natus obcaecati inventore quaerat facilis enim similique..</p>
             </div>
         </details>
@@ -86,14 +84,11 @@
                 <img src="/images/samoyed3.jpeg" alt="Happy Samoyed">
                 <h3>Placeholder for project #3</h3>
             </summary>
-            <div>
+            <div id="projectDetails">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis qui consequatur facilis reprehenderit recusandae accusamus eveniet culpa explicabo. Reiciendis ducimus fugiat in sint veniam accusamus ipsum ratione id, magni quam?</p>
             </div>
         </details>
     </section>
-
-
-
 
 
 
@@ -142,11 +137,11 @@
             <label for="team-project">Team</label>
             <input type="checkbox" id="individually">
             <label for="individually">Individually</label>
-            <button type="submit" class="button">Submit</button>
+            <button type="submit" class="submit-button">Submit</button>
         </form>
     </section>
 
-    <section id="skills" class="animated jackInTheBox delay-1s">
+    <section id="skills" class="skills-section">
         <h3>Placeholder for skills</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat praesentium quaerat assumenda temporibus eius amet odio sapiente cupiditate non porro nesciunt dolor et officiis perferendis nulla, laboriosam impedit quasi! Omnis!</p>
     </section>
@@ -157,14 +152,14 @@
             <form for="contact">
                 <div>
                     <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" id="fullName" name="fullName">
+                    <input type="text" id="fullName" name="fullName"></br>
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email"></br>
                     <label for="phoneNumber" class="form-label"> Phone Number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                    <input type="tel" id="phoneNumber" name="phoneNumber"></br>
                 </div>
-                <textarea name="contactMe" id="contact" cols="30" rows="10" placeholder="Your message here"></textarea>
                 <input type="submit" value="Send Message">
+                <textarea name="contactMe" id="contact" cols="30" rows="10" placeholder="Your message here"></textarea>
               </form>
         </section>
     </footer>
